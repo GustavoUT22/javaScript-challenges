@@ -26,3 +26,17 @@ function isSquare(n) {
 }
    
 const isSquare = (n) => Number.isInteger(Math.sqrt(n)) ?  true : false
+
+//GRASSHOPPER- SUMMARY
+const summation = function (num) {
+  let sum = 0
+  for (i=0; i<=num; i++){
+    sum = sum + i
+  }
+  return sum
+}
+
+//BASIC MATHEMATICAL OPERATIONS
+function basicOp(operation, value1, value2){
+  return eval( value1 + operation + value2)
+  }
