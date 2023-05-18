@@ -17,9 +17,14 @@ function sumTwoSmallestNumbers(numbers) {
   }
   
 //By 3, or not by 3? That is the question . . .
-  function divisibleByThree(str){
-    let numbers = str.split("")
+function divisibleByThree(str){
+    let numbers = str.split("").map((e,i,a) => parseInt(e))
     let total=0;
     for(let i = 0; i < numbers.length; i++) total+=numbers[i];
     return ( total % 3 == 0)
+  }
+  
+//Filter of list
+function filter_list(l) {
+    return l.filter((e) => Number.isInteger(e))
   }
