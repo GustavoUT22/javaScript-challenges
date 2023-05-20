@@ -28,3 +28,18 @@ function divisibleByThree(str){
 function filter_list(l) {
     return l.filter((e) => Number.isInteger(e))
   }
+
+//Array deep count
+function deepCount(array) {
+  let count = 0;
+
+  for (let element of array) {
+    count++; // Incrementamos el contador por cada elemento en el arreglo
+
+    if (Array.isArray(element)) {
+      count += deepCount(element); // Llamada recursiva para contar los elementos del subarreglo
+    }
+  }
+
+  return count;
+}
