@@ -27,3 +27,14 @@ function likes(names) {
       return `${names[0]}, ${names[1]} and ${(names.length - 2)} others like this`
     }
   }
+  //Fix my method
+  function myFunction() {
+    var myObject = {
+      objProperty: "string",
+      objMethod: function objMethod() {
+        return myObject.objProperty
+      }
+    };
+    
+    return myObject;
+  }
