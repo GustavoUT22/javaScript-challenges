@@ -38,3 +38,15 @@ function likes(names) {
     
     return myObject;
   }
+// Merged objects
+//#1
+function objConcat(objects){
+  return objects.reduce((acum, obj) => acum = {...acum, ...obj} , {})
+}
+//#2
+  let result = {}
+  for ( let obj of objects){
+      result = {...result, ...obj}
+  }
+  return result
+
