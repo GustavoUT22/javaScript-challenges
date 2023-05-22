@@ -43,3 +43,10 @@ function deepCount(array) {
 
   return count;
 }
+//Remove all the market element of the list
+Array.prototype.remove_ = function(integer_list, values_list){
+  for (let arg of values_list){
+     integer_list = integer_list.filter(ele => ele != arg)
+  }
+  return integer_list
+}
