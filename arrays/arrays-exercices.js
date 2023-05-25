@@ -108,3 +108,7 @@ var min = function(list){
 var max = function(list){
   return Math.max(...list)
 }
+//REduce
+function grow(x){
+  return x.reduce((a,b) => a * b)
+}
