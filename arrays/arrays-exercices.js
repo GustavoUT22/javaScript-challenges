@@ -50,3 +50,15 @@ Array.prototype.remove_ = function(integer_list, values_list){
   }
   return integer_list
 }
+//Buil Tower
+function towerBuilder(nFloors) {
+  let result = []
+  let maxWidth = (nFloors * 2) - 1
+  let maxSpaces = Math.floor(maxWidth / 2)
+  for ( let i = 1 ; i <= maxWidth; i+=2){
+    let element = `${" ".repeat(maxSpaces)}${"*".repeat(i)}${" ".repeat(maxSpaces)}`
+    result.push(element)
+    maxSpaces--
+  }
+  return result
+}
