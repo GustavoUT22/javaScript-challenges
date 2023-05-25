@@ -62,3 +62,18 @@ function towerBuilder(nFloors) {
   }
   return result
 }
+//Fin the odd int
+function findOdd(arr) {{
+  var result = {}
+  
+  for (let i = 0; i < arr.length; i++){
+    let num = arr[i]
+    result[num] = (result[num] || 0) + 1
+  }
+  for (let key in result) {
+    if (result[key] % 2 !== 0){
+      return Number(key);
+    }
+  }
+} 
+}
