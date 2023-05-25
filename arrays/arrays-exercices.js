@@ -112,3 +112,7 @@ var max = function(list){
 function grow(x){
   return x.reduce((a,b) => a * b)
 }
+//Convert number to reversed array of digits
+function digitize(n) {
+  return n.toString().split("").reverse().map(Number)
+}
