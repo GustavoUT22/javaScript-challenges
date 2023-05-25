@@ -77,3 +77,13 @@ function findOdd(arr) {{
   }
 } 
 }
+//Persistent Bugger
+function persistence(num) {
+  let times = 0
+  while (num >= 10) {
+    let digits = num.toString().split("").map(Number); //["1","5"].map(Number) => [1,5]
+    num = digits.reduce((a, b) => a * b);
+    times++
+  }
+  return times
+}
