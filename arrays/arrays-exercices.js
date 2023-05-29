@@ -116,3 +116,7 @@ function grow(x){
 function digitize(n) {
   return n.toString().split("").reverse().map(Number)
 }
+//Array diff
+function arrayDiff(a, b) {
+  return a.filter((element) => !b.includes(element));
+}
