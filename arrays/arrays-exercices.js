@@ -120,3 +120,7 @@ function digitize(n) {
 function arrayDiff(a, b) {
   return a.filter((element) => !b.includes(element));
 }
+// reverse words
+function reverseWords(str) {
+  return str.split(" ").map((word) => word.split("").reverse().join("")).join(" ");
+}
