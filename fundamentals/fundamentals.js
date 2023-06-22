@@ -40,3 +40,13 @@ const summation = function (num) {
 function basicOp(operation, value1, value2){
   return eval( value1 + operation + value2)
   }
+//Range in array
+  function between(a, b) {
+    const result = [];
+    
+    for (let i = a; i <= b; i++) {
+      result.push(i);
+    }
+    
+    return result;
+  }
