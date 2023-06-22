@@ -50,3 +50,9 @@ function basicOp(operation, value1, value2){
     
     return result;
   }
+
+  //Catch first element of array
+  function getAge(inputString){
+    let string = inputString.split(" ")
+    return parseInt(string[0])
+   }
