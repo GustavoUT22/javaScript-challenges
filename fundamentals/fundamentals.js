@@ -56,3 +56,21 @@ function basicOp(operation, value1, value2){
     let string = inputString.split(" ")
     return parseInt(string[0])
    }
+
+  // queue in the market
+  function queueTime(customers, n) {
+    const tills = new Array(n).fill(0); // Create an array to track the time remaining for each till
+    
+    for (let customer of customers) {
+      const minTime = Math.min(...tills); // Find the till with the minimum remaining time
+      const minIndex = tills.indexOf(minTime); // Find the index of the till with the minimum remaining time
+      tills[minIndex] += customer; // Add the current customer's time to the selected till
+    }
+    
+    return Math.max(...tills); // Return the maximum time among all the tills
+  }
+  
+  // Example usage:
+  console.log(queueTime([5, 3, 4], 1)); // Output: 12
+  console.log(queueTime([10, 2, 3, 3], 2)); // Output: 10
+  console.log(queueTime([2, 3, 10], 2)); // Output: 12
