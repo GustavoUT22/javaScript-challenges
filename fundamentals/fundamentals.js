@@ -74,3 +74,11 @@ function basicOp(operation, value1, value2){
   console.log(queueTime([5, 3, 4], 1)); // Output: 12
   console.log(queueTime([10, 2, 3, 3], 2)); // Output: 10
   console.log(queueTime([2, 3, 10], 2)); // Output: 12
+  //Will you make it?
+  const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    if (distanceToPump <= mpg * fuelLeft){
+      return true;
+    } else {
+      return false;
+    }
+  };
