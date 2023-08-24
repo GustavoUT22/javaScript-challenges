@@ -10,6 +10,14 @@ function countDevelopers(list) {
   return total;
 }
 
+// Coding Meetup #2 - Higher-Order Functions Series - Greet developers
+function greetDevelopers(list) {
+  for (let obj of list) {
+    obj.greeting = `Hi ${obj.firstName}, what do you like the most about ${obj.language}?`;
+  }
+  return list;
+}
+
 // Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?
 function isRubyComing(list) {
   return list.filter((a) => a.language == "Ruby").length > 0;
@@ -38,7 +46,6 @@ function getAverageAge(list) {
 }
 
 // Coding Meetup #12 - Higher-Order Functions Series - Find GitHub admins
-
 function findAdmin(list, lang) {
   return list.filter(
     (ele) => ele.language === lang && ele.githubAdmin === "yes"
@@ -46,7 +53,6 @@ function findAdmin(list, lang) {
 }
 
 // Coding Meetup #14 - Higher-Order Functions Series - Order the food
-
 function orderFood(list) {
   let result = {};
 
