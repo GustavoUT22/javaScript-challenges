@@ -37,6 +37,13 @@ function isSameLanguage(list) {
   return list.every((ele) => ele.language === firstLanguage);
 }
 
+// Coding Meetup #8 - Higher-Order Functions Series - Will all continents be represented?
+function allContinents(list) {
+  let continents_dev = list.map((ele) => ele.continent);
+  let continents = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
+  return continents.every((ele) => continents_dev.includes(ele));
+}
+
 // Coding Meetup #11 - Higher-Order Functions Series - Find the average age
 function getAverageAge(list) {
   const sizeList = list.length;
