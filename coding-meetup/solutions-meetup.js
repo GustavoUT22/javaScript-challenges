@@ -28,3 +28,11 @@ function isSameLanguage(list) {
   const firstLanguage = list[0].language;
   return list.every((ele) => ele.language === firstLanguage);
 }
+
+// Coding Meetup #11 - Higher-Order Functions Series - Find the average age
+function getAverageAge(list) {
+  const sizeList = list.length;
+  return Math.round(
+    list.map((ele) => ele.age).reduce((a, b) => a + b, 0) / sizeList
+  );
+}
