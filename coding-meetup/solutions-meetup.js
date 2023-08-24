@@ -44,3 +44,14 @@ function findAdmin(list, lang) {
     (ele) => ele.language === lang && ele.githubAdmin === "yes"
   );
 }
+
+// Coding Meetup #14 - Higher-Order Functions Series - Order the food
+
+function orderFood(list) {
+  let result = {};
+
+  for (let i = 0; i < list.length; i++) {
+    result[list[i].meal] = (result[list[i].meal] || 0) + 1;
+  }
+  return result;
+}
