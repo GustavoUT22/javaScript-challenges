@@ -22,3 +22,9 @@ function getFirstPython(list) {
     ? `${pythonDeveloper[0].firstName}, ${pythonDeveloper[0].country}`
     : "There will be no Python developers";
 }
+
+// Coding Meetup #6 - Higher-Order Functions Series - Can they code in the same language?
+function isSameLanguage(list) {
+  const firstLanguage = list[0].language;
+  return list.every((ele) => ele.language === firstLanguage);
+}
