@@ -30,6 +30,14 @@ function getFirstPython(list) {
     ? `${pythonDeveloper[0].firstName}, ${pythonDeveloper[0].country}`
     : "There will be no Python developers";
 }
+// Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages
+function countLanguages(list) {
+  let result = {};
+  for (let i = 0; i < list.length; i++) {
+    result[list[i].language] = (result[list[i].language] || 0) + 1;
+  }
+  return result;
+}
 
 // Coding Meetup #6 - Higher-Order Functions Series - Can they code in the same language?
 function isSameLanguage(list) {
